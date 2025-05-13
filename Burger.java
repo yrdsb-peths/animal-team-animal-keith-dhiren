@@ -24,7 +24,7 @@ public class Burger extends Actor
             world.removeObject(this);
         }
     }
-    public void getSpeed(int spd){
+    public void setSpeed(int spd){
         speed = spd;
     }
 }

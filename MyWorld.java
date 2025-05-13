@@ -34,6 +34,7 @@ public class MyWorld extends World {
         Burger burger = new Burger();
         burger.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
-        addObject(burger, x, 0);
+        int y = 0;
+        addObject(burger, x, y);
     }
 }

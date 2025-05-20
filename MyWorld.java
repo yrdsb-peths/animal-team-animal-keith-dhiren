@@ -1,8 +1,11 @@
 import greenfoot.*;
 
 public class MyWorld extends World {
+    // Track the player's score
     public int score = 0;
+    // Label to display the current score
     public Label scoreLabel;
+    // Game level
     int level = 1;
     public MyWorld() {
         //Create the new world
@@ -16,6 +19,7 @@ public class MyWorld extends World {
         scoreLabel = new Label(0, 40);
         addObject(scoreLabel, 20, 20);
         
+        // Spawn first burger
         createBurger();
     }
     public void gameOver(){
@@ -23,8 +27,9 @@ public class MyWorld extends World {
         addObject(gameOverLabel, 300, 200);
     }
     public void increaseScore(){
-        score++;
-        scoreLabel.setValue(score);
+        score++; // Increase score by one
+        scoreLabel.setValue(score); // Update label
+        // Increase level every 5 points
         if(score % 5 ==0){
             level += 1;
         }

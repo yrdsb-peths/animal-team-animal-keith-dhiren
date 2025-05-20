@@ -13,11 +13,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Label extends Actor
 {
+    // The text to display
     private String value;
+    // The font size of the text
     private int fontSize;
+    // The colour of the text outline
     private Color lineColor = Color.BLACK;
+    // The colour of the text fill
     private Color fillColor = Color.WHITE;
     
+    // Transparent background colour
     private static final Color transparent = new Color(0,0,0,0);
 
     
